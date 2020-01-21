@@ -1,0 +1,4 @@
+vhdl work "VGA_800x600_72Hz.vhd"
+vhdl work "pointer_move.vhd"
+vhdl work "Btn_sync.vhd"
+vhdl work "FlappyBat_v2.vhd"

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\AKE\Desktop\FlappyBat_v2\FlappyBat_v2.ncd
+OUTFILE=C:\Users\AKE\Desktop\FlappyBat_v2\FlappyBat_v2.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\AKE\Desktop\FlappyBat_v2
+LICENSE=WebPack
+USER_INFO=211822254_0_0_176

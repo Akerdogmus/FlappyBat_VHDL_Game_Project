@@ -1,0 +1,206 @@
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xa7a100t-csg324-2I "FlappyBat_v2.ngc" FlappyBat_v2.ngd  
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xa7a100t-csg324-2I "FlappyBat_v2.ngc" FlappyBat_v2.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 "FlappyBat_v2.ngc" FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/PROJELER/VHDL Lab Projeleri/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 "FlappyBat_v2.ngc" FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/Burak/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 
+xst -intstyle ise -ifn "C:/Users/AKE/Desktop/FlappyBat_v2/FlappyBat_v2.xst" -ofn "C:/Users/AKE/Desktop/FlappyBat_v2/FlappyBat_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 FlappyBat_v2.ngc FlappyBat_v2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlappyBat_v2_map.ncd FlappyBat_v2.ngd FlappyBat_v2.pcf 
+par -w -intstyle ise -ol high -t 1 FlappyBat_v2_map.ncd FlappyBat_v2.ncd FlappyBat_v2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FlappyBat_v2.twx FlappyBat_v2.ncd -o FlappyBat_v2.twr FlappyBat_v2.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f FlappyBat_v2.ut FlappyBat_v2.ncd 

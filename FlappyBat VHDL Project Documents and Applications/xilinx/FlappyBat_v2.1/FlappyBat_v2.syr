@@ -1,0 +1,635 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: FlappyBat_v2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FlappyBat_v2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FlappyBat_v2"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : FlappyBat_v2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/AKE/Desktop/FlappyBat_v2/VGA_800x600_72Hz.vhd" in Library work.
+Entity <vga_800x600_72hz> compiled.
+Entity <vga_800x600_72hz> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/AKE/Desktop/FlappyBat_v2/pointer_move.vhd" in Library work.
+Entity <pointer_move> compiled.
+Entity <pointer_move> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/AKE/Desktop/FlappyBat_v2/Btn_sync.vhd" in Library work.
+Entity <btn_sync> compiled.
+Entity <btn_sync> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/AKE/Desktop/FlappyBat_v2/FlappyBat_v2.vhd" in Library work.
+Architecture behavioral of Entity flappybat_v2 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <FlappyBat_v2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <VGA_800x600_72Hz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <pointer_move> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Btn_sync> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <FlappyBat_v2> in library <work> (Architecture <behavioral>).
+Entity <FlappyBat_v2> analyzed. Unit <FlappyBat_v2> generated.
+
+Analyzing Entity <VGA_800x600_72Hz> in library <work> (Architecture <behavioral>).
+Entity <VGA_800x600_72Hz> analyzed. Unit <VGA_800x600_72Hz> generated.
+
+Analyzing Entity <pointer_move> in library <work> (Architecture <behavioral>).
+Entity <pointer_move> analyzed. Unit <pointer_move> generated.
+
+Analyzing Entity <Btn_sync> in library <work> (Architecture <behavioral>).
+Entity <Btn_sync> analyzed. Unit <Btn_sync> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <VGA_800x600_72Hz>.
+    Related source file is "C:/Users/AKE/Desktop/FlappyBat_v2/VGA_800x600_72Hz.vhd".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <endline> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <blue>.
+    Found 1-bit register for signal <green>.
+    Found 1-bit register for signal <red>.
+    Found 8-bit adder for signal <LED>.
+    Found 11-bit adder for signal <blue$add0000> created at line 146.
+    Found 11-bit adder for signal <blue$add0001> created at line 146.
+    Found 11-bit comparator greater for signal <blue$cmp_gt0000> created at line 146.
+    Found 11-bit comparator greater for signal <blue$cmp_gt0001> created at line 146.
+    Found 11-bit comparator less for signal <blue$cmp_lt0000> created at line 146.
+    Found 11-bit comparator less for signal <blue$cmp_lt0001> created at line 146.
+    Found 17-bit down counter for signal <box_counter>.
+    Found 17-bit down counter for signal <bug_counter>.
+    Found 17-bit comparator greater for signal <bug_counter$cmp_gt0000> created at line 139.
+    Found 11-bit subtractor for signal <green$addsub0000> created at line 102.
+    Found 11-bit adder for signal <green$addsub0001> created at line 102.
+    Found 11-bit subtractor for signal <green$addsub0002> created at line 102.
+    Found 11-bit adder for signal <green$addsub0003> created at line 102.
+    Found 11-bit subtractor for signal <green$addsub0004> created at line 102.
+    Found 11-bit adder for signal <green$addsub0005> created at line 102.
+    Found 11-bit subtractor for signal <green$addsub0006> created at line 102.
+    Found 11-bit adder for signal <green$addsub0007> created at line 102.
+    Found 11-bit adder for signal <green$addsub0008> created at line 102.
+    Found 11-bit adder for signal <green$addsub0009> created at line 102.
+    Found 11-bit adder for signal <green$addsub0010> created at line 102.
+    Found 11-bit adder for signal <green$addsub0011> created at line 102.
+    Found 11-bit adder for signal <green$addsub0012> created at line 102.
+    Found 11-bit subtractor for signal <green$addsub0013> created at line 102.
+    Found 11-bit adder for signal <green$addsub0014> created at line 102.
+    Found 11-bit subtractor for signal <green$addsub0015> created at line 102.
+    Found 11-bit adder for signal <green$addsub0016> created at line 102.
+    Found 11-bit comparator greater for signal <green$cmp_gt0000> created at line 102.
+    Found 11-bit comparator greater for signal <green$cmp_gt0001> created at line 102.
+    Found 11-bit comparator greater for signal <green$cmp_gt0002> created at line 102.
+    Found 11-bit comparator greater for signal <green$cmp_gt0003> created at line 102.
+    Found 11-bit comparator greater for signal <green$cmp_gt0004> created at line 102.
+    Found 11-bit comparator greater for signal <green$cmp_gt0005> created at line 102.
+    Found 11-bit comparator greater for signal <green$cmp_gt0006> created at line 102.
+    Found 11-bit comparator greater for signal <green$cmp_gt0007> created at line 102.
+    Found 11-bit comparator less for signal <green$cmp_lt0000> created at line 102.
+    Found 11-bit comparator less for signal <green$cmp_lt0001> created at line 102.
+    Found 11-bit comparator less for signal <green$cmp_lt0002> created at line 102.
+    Found 11-bit comparator less for signal <green$cmp_lt0003> created at line 102.
+    Found 11-bit comparator less for signal <green$cmp_lt0004> created at line 102.
+    Found 11-bit comparator less for signal <green$cmp_lt0005> created at line 102.
+    Found 11-bit comparator less for signal <green$cmp_lt0006> created at line 102.
+    Found 11-bit comparator less for signal <green$cmp_lt0007> created at line 102.
+    Found 11-bit comparator less for signal <green$cmp_lt0008> created at line 102.
+    Found 11-bit comparator less for signal <green$cmp_lt0009> created at line 102.
+    Found 11-bit comparator greatequal for signal <h_sync$cmp_ge0000> created at line 91.
+    Found 11-bit comparator less for signal <h_sync$cmp_lt0000> created at line 91.
+    Found 11-bit up counter for signal <hcs>.
+    Found 11-bit comparator greater for signal <red$cmp_gt0000> created at line 190.
+    Found 11-bit comparator greater for signal <red$cmp_gt0001> created at line 190.
+    Found 11-bit comparator greater for signal <red$cmp_gt0002> created at line 192.
+    Found 11-bit comparator greater for signal <red$cmp_gt0003> created at line 192.
+    Found 11-bit comparator less for signal <red$cmp_lt0000> created at line 190.
+    Found 11-bit comparator less for signal <red$cmp_lt0001> created at line 190.
+    Found 11-bit comparator less for signal <red$cmp_lt0002> created at line 192.
+    Found 11-bit comparator less for signal <red$cmp_lt0003> created at line 192.
+    Found 8-bit up counter for signal <score>.
+    Found 11-bit comparator greatequal for signal <score$cmp_ge0000> created at line 209.
+    Found 8-bit up counter for signal <score1>.
+    Found 11-bit adder for signal <score1$add0000> created at line 215.
+    Found 11-bit adder for signal <score1$add0001> created at line 215.
+    Found 11-bit adder for signal <score1$add0002> created at line 225.
+    Found 11-bit adder for signal <score1$add0003> created at line 225.
+    Found 11-bit comparator greatequal for signal <score1$cmp_ge0000> created at line 215.
+    Found 11-bit comparator greatequal for signal <score1$cmp_ge0001> created at line 215.
+    Found 11-bit comparator greatequal for signal <score1$cmp_ge0002> created at line 225.
+    Found 11-bit comparator greatequal for signal <score1$cmp_ge0003> created at line 225.
+    Found 11-bit comparator greatequal for signal <score1$cmp_ge0004> created at line 204.
+    Found 11-bit comparator lessequal for signal <score1$cmp_le0000> created at line 215.
+    Found 11-bit comparator lessequal for signal <score1$cmp_le0001> created at line 215.
+    Found 11-bit comparator lessequal for signal <score1$cmp_le0002> created at line 225.
+    Found 11-bit comparator lessequal for signal <score1$cmp_le0003> created at line 225.
+    Found 11-bit comparator greatequal for signal <v_sync$cmp_ge0000> created at line 92.
+    Found 11-bit comparator less for signal <v_sync$cmp_lt0000> created at line 92.
+    Found 11-bit up counter for signal <vcs>.
+    Found 11-bit comparator less for signal <visible$cmp_lt0000> created at line 93.
+    Found 11-bit comparator less for signal <visible$cmp_lt0001> created at line 93.
+    Found 11-bit register for signal <x1_box>.
+    Found 11-bit subtractor for signal <x1_box$addsub0000> created at line 186.
+    Found 17-bit comparator greater for signal <x1_box$cmp_gt0000> created at line 182.
+    Found 11-bit comparator greater for signal <x1_box$cmp_gt0001> created at line 215.
+    Found 11-bit comparator greater for signal <x1_box$cmp_gt0002> created at line 215.
+    Found 11-bit comparator less for signal <x1_box$cmp_lt0000> created at line 215.
+    Found 11-bit comparator less for signal <x1_box$cmp_lt0001> created at line 215.
+    Found 11-bit comparator less for signal <x1_box$cmp_lt0002> created at line 204.
+    Found 11-bit register for signal <x2_box>.
+    Found 11-bit comparator greater for signal <x2_box$cmp_gt0000> created at line 225.
+    Found 11-bit comparator greater for signal <x2_box$cmp_gt0001> created at line 225.
+    Found 11-bit comparator less for signal <x2_box$cmp_lt0000> created at line 225.
+    Found 11-bit comparator less for signal <x2_box$cmp_lt0001> created at line 225.
+    Found 11-bit comparator less for signal <x2_box$cmp_lt0002> created at line 209.
+    Found 11-bit subtractor for signal <x2_box$share0000>.
+    Found 11-bit register for signal <x_bug>.
+    Found 11-bit subtractor for signal <x_bug$addsub0000> created at line 144.
+    Found 11-bit comparator greatequal for signal <x_bug$cmp_ge0000> created at line 158.
+    Found 11-bit comparator greatequal for signal <x_bug$cmp_ge0001> created at line 158.
+    Found 11-bit comparator greater for signal <x_bug$cmp_gt0000> created at line 162.
+    Found 11-bit comparator greater for signal <x_bug$cmp_gt0001> created at line 158.
+    Found 11-bit comparator greater for signal <x_bug$cmp_gt0002> created at line 158.
+    Found 11-bit comparator greater for signal <x_bug$cmp_gt0003> created at line 152.
+    Found 11-bit comparator lessequal for signal <x_bug$cmp_le0000> created at line 158.
+    Found 11-bit comparator lessequal for signal <x_bug$cmp_le0001> created at line 158.
+    Found 11-bit comparator lessequal for signal <x_bug$cmp_le0002> created at line 152.
+    Found 11-bit comparator less for signal <x_bug$cmp_lt0000> created at line 158.
+    Found 11-bit comparator less for signal <x_bug$cmp_lt0001> created at line 158.
+    Found 11-bit up counter for signal <x_counter>.
+    Found 11-bit comparator less for signal <x_counter$cmp_lt0000> created at line 134.
+    Found 11-bit register for signal <y1_box>.
+    Found 11-bit comparator greater for signal <y1_box$cmp_gt0000> created at line 222.
+    Found 11-bit register for signal <y2_box>.
+    Found 11-bit comparator greater for signal <y2_box$cmp_gt0000> created at line 232.
+    Found 11-bit subtractor for signal <y2_box$share0000>.
+    Found 11-bit up accumulator for signal <y_box_counter>.
+    Found 11-bit comparator less for signal <y_box_counter$cmp_lt0000> created at line 176.
+    Found 11-bit up counter for signal <y_bug>.
+    Summary:
+	inferred   8 Counter(s).
+	inferred   1 Accumulator(s).
+	inferred  58 D-type flip-flop(s).
+	inferred  28 Adder/Subtractor(s).
+	inferred  73 Comparator(s).
+Unit <VGA_800x600_72Hz> synthesized.
+
+
+Synthesizing Unit <pointer_move>.
+    Related source file is "C:/Users/AKE/Desktop/FlappyBat_v2/pointer_move.vhd".
+WARNING:Xst:653 - Signal <pointer_x> is used but never assigned. This sourceless signal will be automatically connected to value 00001100100.
+    Found 11-bit register for signal <pointer_y>.
+    Found 11-bit addsub for signal <pointer_y$addsub0000>.
+    Found 11-bit comparator greater for signal <pointer_y$cmp_gt0000> created at line 47.
+    Found 11-bit comparator less for signal <pointer_y$cmp_lt0000> created at line 46.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <pointer_move> synthesized.
+
+
+Synthesizing Unit <Btn_sync>.
+    Related source file is "C:/Users/AKE/Desktop/FlappyBat_v2/Btn_sync.vhd".
+    Found finite state machine <FSM_0> for signal <present_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk50                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | btns_no_imp                                    |
+    | Power Up State     | btns_no_imp                                    |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <Btn_sync> synthesized.
+
+
+Synthesizing Unit <FlappyBat_v2>.
+    Related source file is "C:/Users/AKE/Desktop/FlappyBat_v2/FlappyBat_v2.vhd".
+WARNING:Xst:646 - Signal <BLANK_VAL> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <FlappyBat_v2> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 29
+ 11-bit adder                                          : 17
+ 11-bit addsub                                         : 1
+ 11-bit subtractor                                     : 10
+ 8-bit adder                                           : 1
+# Counters                                             : 8
+ 11-bit up counter                                     : 4
+ 17-bit down counter                                   : 2
+ 8-bit up counter                                      : 2
+# Accumulators                                         : 1
+ 11-bit up accumulator                                 : 1
+# Registers                                            : 9
+ 1-bit register                                        : 3
+ 11-bit register                                       : 6
+# Comparators                                          : 75
+ 11-bit comparator greatequal                          : 10
+ 11-bit comparator greater                             : 25
+ 11-bit comparator less                                : 31
+ 11-bit comparator lessequal                           : 7
+ 17-bit comparator greater                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Buton_sync/present_state/FSM> on signal <present_state[1:3]> with sequential encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ btns_no_imp       | 000
+ btn_up_imp        | 001
+ btn_up_imp_cont   | 011
+ btn_down_imp      | 010
+ btn_down_imp_cont | 100
+-------------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 29
+ 11-bit adder                                          : 17
+ 11-bit addsub                                         : 1
+ 11-bit subtractor                                     : 10
+ 8-bit adder                                           : 1
+# Counters                                             : 8
+ 11-bit up counter                                     : 4
+ 17-bit down counter                                   : 2
+ 8-bit up counter                                      : 2
+# Accumulators                                         : 1
+ 11-bit up accumulator                                 : 1
+# Registers                                            : 69
+ Flip-Flops                                            : 69
+# Comparators                                          : 75
+ 11-bit comparator greatequal                          : 10
+ 11-bit comparator greater                             : 25
+ 11-bit comparator less                                : 31
+ 11-bit comparator lessequal                           : 7
+ 17-bit comparator greater                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <y1_box_0> has a constant value of 0 in block <VGA_800x600_72Hz>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y1_box_1> has a constant value of 0 in block <VGA_800x600_72Hz>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x2_box_0> has a constant value of 0 in block <VGA_800x600_72Hz>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y2_box_0> has a constant value of 0 in block <VGA_800x600_72Hz>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y_box_counter_0> has a constant value of 0 in block <VGA_800x600_72Hz>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y_box_counter_1> has a constant value of 0 in block <VGA_800x600_72Hz>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <FlappyBat_v2> ...
+
+Optimizing unit <VGA_800x600_72Hz> ...
+
+Optimizing unit <pointer_move> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FlappyBat_v2, actual ratio is 11.
+FlipFlop Display/hcs_5 has been replicated 1 time(s)
+FlipFlop Display/hcs_6 has been replicated 1 time(s)
+FlipFlop Display/hcs_7 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 174
+ Flip-Flops                                            : 174
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : FlappyBat_v2.ngr
+Top Level Output File Name         : FlappyBat_v2
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 2062
+#      GND                         : 1
+#      INV                         : 246
+#      LUT1                        : 219
+#      LUT2                        : 319
+#      LUT3                        : 105
+#      LUT3_L                      : 3
+#      LUT4                        : 54
+#      LUT4_D                      : 7
+#      LUT4_L                      : 8
+#      MUXCY                       : 792
+#      MUXF5                       : 5
+#      VCC                         : 1
+#      XORCY                       : 302
+# FlipFlops/Latches                : 174
+#      FDC                         : 3
+#      FDE                         : 77
+#      FDR                         : 14
+#      FDRE                        : 78
+#      FDSE                        : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 3
+#      OBUF                        : 13
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      520  out of   4656    11%  
+ Number of Slice Flip Flops:            174  out of   9312     1%  
+ Number of 4 input LUTs:                961  out of   9312    10%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    232     7%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk50                              | BUFGP                  | 174   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 3     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 10.249ns (Maximum Frequency: 97.570MHz)
+   Minimum input arrival time before clock: 3.173ns
+   Maximum output required time after clock: 8.764ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk50'
+  Clock period: 10.249ns (frequency: 97.570MHz)
+  Total number of paths / destination ports: 60963 / 424
+-------------------------------------------------------------------------
+Delay:               10.249ns (Levels of Logic = 13)
+  Source:            Display/y2_box_3 (FF)
+  Destination:       Display/score1_7 (FF)
+  Source Clock:      clk50 rising
+  Destination Clock: clk50 rising
+
+  Data Path: Display/y2_box_3 to Display/score1_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.591   0.762  Display/y2_box_3 (Display/y2_box_3)
+     LUT1:I0->O            1   0.704   0.000  Display/Madd_score1_add0003_cy<3>_rt (Display/Madd_score1_add0003_cy<3>_rt)
+     MUXCY:S->O            1   0.464   0.000  Display/Madd_score1_add0003_cy<3> (Display/Madd_score1_add0003_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Display/Madd_score1_add0003_cy<4> (Display/Madd_score1_add0003_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Display/Madd_score1_add0003_cy<5> (Display/Madd_score1_add0003_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Display/Madd_score1_add0003_cy<6> (Display/Madd_score1_add0003_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Display/Madd_score1_add0003_cy<7> (Display/Madd_score1_add0003_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Display/Madd_score1_add0003_cy<8> (Display/Madd_score1_add0003_cy<8>)
+     MUXCY:CI->O           0   0.059   0.000  Display/Madd_score1_add0003_cy<9> (Display/Madd_score1_add0003_cy<9>)
+     XORCY:CI->O           2   0.804   0.526  Display/Madd_score1_add0003_xor<10> (Display/score1_add0003<10>)
+     LUT2:I1->O            1   0.704   0.000  Display/Mcompar_score1_cmp_le0003_lut<10> (Display/Mcompar_score1_cmp_le0003_lut<10>)
+     MUXCY:S->O            5   0.864   0.668  Display/Mcompar_score1_cmp_le0003_cy<10> (Display/score1_cmp_le0003)
+     LUT3:I2->O            1   0.704   0.455  Display/score1_and0000_SW0 (N5)
+     LUT4:I2->O           16   0.704   1.034  Display/score1_and0000 (Display/score1_and0000)
+     FDRE:R                    0.911          Display/score_0
+    ----------------------------------------
+    Total                     10.249ns (6.804ns logic, 3.445ns route)
+                                       (66.4% logic, 33.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk50'
+  Total number of paths / destination ports: 5 / 3
+-------------------------------------------------------------------------
+Offset:              3.173ns (Levels of Logic = 3)
+  Source:            downButon (PAD)
+  Destination:       Buton_sync/present_state_FSM_FFd1 (FF)
+  Destination Clock: clk50 rising
+
+  Data Path: downButon to Buton_sync/present_state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.622  downButon_IBUF (downButon_IBUF)
+     LUT4:I0->O            1   0.704   0.000  Buton_sync/present_state_FSM_FFd1-In1 (Buton_sync/present_state_FSM_FFd1-In1)
+     MUXF5:I0->O           1   0.321   0.000  Buton_sync/present_state_FSM_FFd1-In_f5 (Buton_sync/present_state_FSM_FFd1-In)
+     FDC:D                     0.308          Buton_sync/present_state_FSM_FFd1
+    ----------------------------------------
+    Total                      3.173ns (2.551ns logic, 0.622ns route)
+                                       (80.4% logic, 19.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk50'
+  Total number of paths / destination ports: 137 / 13
+-------------------------------------------------------------------------
+Offset:              8.764ns (Levels of Logic = 10)
+  Source:            Display/vcs_0 (FF)
+  Destination:       VGA_VS (PAD)
+  Source Clock:      clk50 rising
+
+  Data Path: Display/vcs_0 to VGA_VS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            19   0.591   1.260  Display/vcs_0 (Display/vcs_0)
+     LUT1:I0->O            1   0.704   0.000  Display/Mcompar_v_sync_cmp_lt0000_cy<0>_0_rt (Display/Mcompar_v_sync_cmp_lt0000_cy<0>_0_rt)
+     MUXCY:S->O            1   0.464   0.000  Display/Mcompar_v_sync_cmp_lt0000_cy<0>_0 (Display/Mcompar_v_sync_cmp_lt0000_cy<0>1)
+     MUXCY:CI->O           1   0.059   0.000  Display/Mcompar_v_sync_cmp_lt0000_cy<1>_0 (Display/Mcompar_v_sync_cmp_lt0000_cy<1>1)
+     MUXCY:CI->O           1   0.059   0.000  Display/Mcompar_v_sync_cmp_lt0000_cy<2>_0 (Display/Mcompar_v_sync_cmp_lt0000_cy<2>1)
+     MUXCY:CI->O           1   0.059   0.000  Display/Mcompar_v_sync_cmp_lt0000_cy<3>_0 (Display/Mcompar_v_sync_cmp_lt0000_cy<3>1)
+     MUXCY:CI->O           1   0.059   0.000  Display/Mcompar_v_sync_cmp_lt0000_cy<4>_0 (Display/Mcompar_v_sync_cmp_lt0000_cy<4>1)
+     MUXCY:CI->O           1   0.059   0.000  Display/Mcompar_v_sync_cmp_lt0000_cy<5>_0 (Display/Mcompar_v_sync_cmp_lt0000_cy<5>1)
+     MUXCY:CI->O           1   0.459   0.595  Display/Mcompar_v_sync_cmp_lt0000_cy<6>_0 (Display/v_sync_cmp_ge0000)
+     LUT2:I0->O            1   0.704   0.420  Display/v_sync_and00001 (VGA_VS_OBUF)
+     OBUF:I->O                 3.272          VGA_VS_OBUF (VGA_VS)
+    ----------------------------------------
+    Total                      8.764ns (6.489ns logic, 2.275ns route)
+                                       (74.0% logic, 26.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.33 secs
+ 
+--> 
+
+Total memory usage is 4555244 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

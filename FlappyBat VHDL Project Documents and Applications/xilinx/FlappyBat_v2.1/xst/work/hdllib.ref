@@ -1,0 +1,8 @@
+EN vga_800x600_72hz NULL C:/Users/AKE/Desktop/FlappyBat_v2/VGA_800x600_72Hz.vhd sub00/vhpl00 1577317473
+EN btn_sync NULL C:/Users/AKE/Desktop/FlappyBat_v2/Btn_sync.vhd sub00/vhpl06 1577317477
+AR pointer_move behavioral C:/Users/AKE/Desktop/FlappyBat_v2/pointer_move.vhd sub00/vhpl03 1577317476
+AR btn_sync behavioral C:/Users/AKE/Desktop/FlappyBat_v2/Btn_sync.vhd sub00/vhpl07 1577317478
+EN pointer_move NULL C:/Users/AKE/Desktop/FlappyBat_v2/pointer_move.vhd sub00/vhpl02 1577317475
+EN flappybat_v2 NULL C:/Users/AKE/Desktop/FlappyBat_v2/FlappyBat_v2.vhd sub00/vhpl04 1577317479
+AR vga_800x600_72hz behavioral C:/Users/AKE/Desktop/FlappyBat_v2/VGA_800x600_72Hz.vhd sub00/vhpl01 1577317474
+AR flappybat_v2 behavioral C:/Users/AKE/Desktop/FlappyBat_v2/FlappyBat_v2.vhd sub00/vhpl05 1577317480
